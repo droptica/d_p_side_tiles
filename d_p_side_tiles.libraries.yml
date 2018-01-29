@@ -1,0 +1,9 @@
+masonry:
+  version: VERSION
+  js:
+    /libraries/masonry-layout/dist/masonry.pkgd.min.js: {}
+
+d_p_side_tiles:
+  version: VERSION
+  js:
+    js/d_p_side_tiles.js: {}
