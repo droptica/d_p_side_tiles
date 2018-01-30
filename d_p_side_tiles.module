@@ -23,8 +23,6 @@ function d_p_side_tiles_preprocess_paragraph(&$variables) {
       $variables['#attached']['library'][] = 'd_p_side_tiles/d_p_side_tiles';
       break;
   }
-
-  $variables['#attached']['library'][] = 'd_p_side_tiles/d_p_side_tiles';
 }
 
 /**
