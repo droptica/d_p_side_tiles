@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.d_p_side_tiles.field_d_cta_link
+    - field.field.paragraph.d_p_side_tiles.field_d_icon
     - field.field.paragraph.d_p_side_tiles.field_d_image
     - field.field.paragraph.d_p_side_tiles.field_d_long_text
     - field.field.paragraph.d_p_side_tiles.field_d_main_title
@@ -33,6 +34,14 @@ content:
     third_party_settings: {  }
     type: link_attributes
     region: content
+  field_d_icon:
+    weight: 0
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_d_image:
     weight: 3
     settings:
@@ -50,7 +59,7 @@ content:
     type: text_textarea
     region: content
   field_d_main_title:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -72,8 +81,10 @@ content:
     type: string_textfield
     region: content
   translation:
-    weight: 10
+    weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

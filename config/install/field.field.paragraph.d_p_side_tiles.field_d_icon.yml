@@ -2,30 +2,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_d_image
+    - field.storage.paragraph.field_d_icon
     - paragraphs.paragraphs_type.d_p_side_tiles
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      file: file
-      alt: '0'
-      title: '0'
-id: paragraph.d_p_side_tiles.field_d_image
-field_name: field_d_image
+id: paragraph.d_p_side_tiles.field_d_icon
+field_name: field_d_icon
 entity_type: paragraph
 bundle: d_p_side_tiles
-label: Tiles
-description: 'Please place EVEN number of images here.'
-required: true
-translatable: true
+label: Icon
+description: ''
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'gallery/[current-page:url:args:value:0]_[current-page:url:args:value:1]'
-  file_extensions: 'png gif jpg jpeg'
+  file_directory: 'icons/[current-page:url:args:value:0]_[current-page:url:args:value:1]'
+  file_extensions: 'png gif jpg jpeg svg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
