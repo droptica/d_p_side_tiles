@@ -50,4 +50,4 @@ Finally add this to "extra" section as first item in "installer-paths":
 
 4. Run **gulp compile** in droopler_subtheme directory
 5. Enable module in Drupal.
-6. Enjoy the new paragraph :-). Remember - if you want a tile to be 2x bigger than others - append "2x2" string to image's ALT text.
+6. Enjoy the new paragraph :-). Remember - if you want a add a subtitle to image - type "Title / Subtitle" in image's ALT text.
