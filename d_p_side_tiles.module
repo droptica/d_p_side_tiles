@@ -35,5 +35,22 @@ function d_p_side_tiles_theme($existing, $type, $theme, $path) {
     'paragraph__d_p_side_tiles' => [
       'base hook' => 'paragraph',
     ],
+    'field__paragraph__field_d_image__d_p_side_tiles' => [
+      'base hook' => 'field',
+    ]
   ];
+}
+
+/**
+ * Implements hook_preprocess_colorbox_formatter().
+ */
+function d_p_side_tiles_preprocess_colorbox_formatter(&$variables) {
+  // Add standard size to each field.
+  $variables['attributes']['class'][] = 'd-tiles-item';
+
+  // Detect custom sizes in ALTs.
+  $fd = $variables['item']->getFieldDefinition();
+  if ($fd->id() == 'paragraph.d_p_side_tiles.field_d_image') {
+    $variables['attributes']['title'] = '';
+  }
 }

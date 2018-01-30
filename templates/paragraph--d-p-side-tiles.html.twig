@@ -40,18 +40,21 @@
 #}
 {% set classes = [
 'paragraph',
+'container-fluid',
 'd-p-side-tiles-banner',
 'paragraph--type--' ~ paragraph.bundle|clean_class,
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ] %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="clearfix d-p-side-tiles-banner-wrapper image-side-{{ tiles_side }}">
-      <div class="d-tiles-wrapper col-md-6">
+    <div class="clearfix d-p-side-tiles-wrapper row image-side-{{ tiles_side }}">
+      <div class="d-p-side-tiles-images col-lg-6">
         {{ content.field_d_image }}
       </div>
-      <div class="container-half col-md-6">
-        {{ content | without('field_d_image') }}
+      <div class="d-p-side-tiles-content col-lg-6">
+        <div class="d-p-side-tiles-content-fields">
+          {{ content | without('field_d_image') }}
+        </div>
       </div>
     </div>
   </div>
