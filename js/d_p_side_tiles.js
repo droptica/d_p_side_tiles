@@ -1,8 +1,10 @@
+console.log('jsem');
+
 (function ($, Drupal) {
 
   'use strict';
 
-  Drupal.behaviors.droopler_subtheme = {
+  Drupal.behaviors.d_p_side_tiles = {
     attach: function (context, settings) {
 
       // Enable Masonry.
