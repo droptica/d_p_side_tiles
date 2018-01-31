@@ -1,5 +1,3 @@
-console.log('jsem');
-
 (function ($, Drupal) {
 
   'use strict';
